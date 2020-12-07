@@ -2,12 +2,18 @@ const brushSizeInput = document.getElementById("brush-size-input");
 const colorInput = document.getElementById("color-input");
 const paintBtn = document.getElementById("btn-paint");
 
+const paintBtnText = 'FONT SIZE: ';
 //let colorInput = document.querySelector("#color");
 let color = '#000000';
 let brushSize = 1;
 let transfersPerSecond = 10;
 
 let mousedownID = -1;
+
+
+onload = function (){
+    brushSizeInput.innerHTML = paintBtnText + '1';
+}
 
 console.log('starte UI Handler');
 
@@ -20,7 +26,7 @@ brushSizeInput.addEventListener('click', () => {
         brushSize = 0;
     }
     brushSize++;
-    brushSizeInput.innerHTML = "Schriftst&aumlrke: " + brushSize;
+    brushSizeInput.innerHTML = paintBtnText + brushSize;
 });
 
 paintBtn.onmousedown = onPaintDown;

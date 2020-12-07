@@ -5,11 +5,10 @@ body{
     display: flex;
     flex-direction: column;
     touch-action: manipulation;
-    /*
-    background-image: url("https://www.knowblogs.net/wp-content/uploads/2016/02/pencil-34532_1280.png");
+
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/12/17/21/doodle-1388118_960_720.png");
     background-position: center;
     background-size: cover;
-     */
 }
 .content{
     flex: 1 0 auto;
