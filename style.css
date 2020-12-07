@@ -1,0 +1,45 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    touch-action: manipulation;
+    /*
+    background-image: url("https://www.knowblogs.net/wp-content/uploads/2016/02/pencil-34532_1280.png");
+    background-position: center;
+    background-size: cover;
+     */
+}
+.content{
+    flex: 1 0 auto;
+}
+.footer{
+    flex-shrink: 0;
+    padding: 10px;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footerItem{
+    color: black;
+    font-size: xx-large;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 0 0 10px black;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.color-input{
+    height: 35px;
+}
+.btn-paint:active{
+    background-color: darkgrey;
+    box-shadow: 0 0 20px black;
+}
